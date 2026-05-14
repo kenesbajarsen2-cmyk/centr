@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный Центр — Путь к Успеху</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Edu<span>Center</span></a>
+            <nav class="nav">
+                <a href="#courses">Курсы</a>
+                <a href="#advantages">Преимущества</a>
+                <a href="#teachers">Преподаватели</a>
+                <a href="#register" class="nav-btn">Записаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Инвестируйте в свое будущее</h1>
+            <p>Профессиональные курсы для детей и взрослых. Получите востребованные навыки от практикующих экспертов.</p>
+            <a href="#courses" class="btn-primary">Выбрать курс</a>
+        </div>
+    </section>
+
+    <!-- Популярные курсы -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2 class="section-title">Наши направления</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-tag">IT</div>
+                    <h3>Программирование</h3>
+                    <p>Изучение Python, веб-разработки и создание мобильных приложений с нуля.</p>
+                    <div class="course-footer">
+                        <span>3 месяца</span>
+                        <a href="#register" class="course-link">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-tag">Языки</div>
+                    <h3>Английский язык</h3>
+                    <p>Разговорный английский для работы, путешествий и успешной сдачи экзаменов.</p>
+                    <div class="course-footer">
+                        <span>4 месяца</span>
+                        <a href="#register" class="course-link">Подробнее →</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-tag">Дизайн</div>
+                    <h3>Графический дизайн</h3>
+                    <p>Освоение Photoshop, Illustrator и Figma. Создание портфолио в процессе обучения.</p>
+                    <div class="course-footer">
+                        <span>2 месяца</span>
+                        <a href="#register" class="course-link">Подробнее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <div class="adv-icon">🎓</div>
+                    <h4>Диплом гособразца</h4>
+                    <p>Выдаем официальный сертификат по окончании каждого курса.</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-icon">💻</div>
+                    <h4>Практика 80%</h4>
+                    <p>Минимум скучной теории, максимум реальных проектов в портфолио.</p>
+                </div>
+                <div class="adv-item">
+                    <div class="adv-icon">👨‍🏫</div>
+                    <h4>Опытные наставники</h4>
+                    <p>Занятия ведут сертифицированные специалисты и преподаватели вузов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма записи -->
+    <section id="register" class="section form-section">
+        <div class="container form-container">
+            <div class="form-info">
+                <h2>Оставьте заявку</h2>
+                <p>Запишитесь на бесплатный пробный урок или получите консультацию специалиста.</p>
+            </div>
+            <form class="main-form" onsubmit="event.preventDefault(); alert('Заявка успешно отправлена!');">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <select required>
+                    <option value="" disabled selected>Выберите направление</option>
+                    <option value="it">Программирование</option>
+                    <option value="lang">Английский язык</option>
+                    <option value="design">Графический дизайн</option>
+                </select>
+                <button type="submit" class="btn-submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 EduCenter. Все права защищены.</p>
+            <div class="footer-contacts">
+                <span>г. Москва, ул. Просвещения, д. 10</span>
+                <span>+7 (495) 123-45-67</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

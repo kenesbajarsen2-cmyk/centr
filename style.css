@@ -1,0 +1,328 @@
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a202c;
+}
+
+.bg-light {
+    background-color: #f7fafc;
+}
+
+/* Навигационная панель */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2d3748;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav a {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #2b6cb0;
+}
+
+.nav .nav-btn {
+    background-color: #2b6cb0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav .nav-btn:hover {
+    background-color: #2c5282;
+    color: #fff;
+}
+
+/* Главный блок (Hero) */
+.hero {
+    background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+    color: #fff;
+    padding: 180px 0 120px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #e2e8f0;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #3182ce;
+    color: #fff;
+    padding: 15px 35px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+}
+
+/* Сетка курсов */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.course-tag {
+    align-self: flex-start;
+    background: #ebf8ff;
+    color: #2b6cb0;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1a202c;
+}
+
+.course-card p {
+    color: #718096;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #edf2f7;
+    padding-top: 15px;
+    font-size: 0.95rem;
+}
+
+.course-footer span {
+    color: #a0aec0;
+}
+
+.course-link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Блок преимуществ */
+.adv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.adv-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.adv-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.adv-item p {
+    color: #718096;
+}
+
+/* Секция с формой */
+.form-section {
+    background-color: #2b6cb0;
+    color: #fff;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.form-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-info p {
+    color: #ebf8ff;
+    font-size: 1.1rem;
+}
+
+.main-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-form input, .main-form select {
+    padding: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-submit {
+    background: #48bb78;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #38a169;
+}
+
+/* Подвал сайта */
+.footer {
+    background: #1a202c;
+    color: #a0aec0;
+    padding: 40px 0;
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-contacts span {
+    margin-left: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        padding: 160px 0 80px;
+    }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+    .form-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .main-form {
+        padding: 25px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-contacts span {
+        display: block;
+        margin: 10px 0 0 0;
+    }
+}
